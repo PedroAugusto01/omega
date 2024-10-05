@@ -136,9 +136,9 @@ function calculateTotal(isFarm = false) {
         totalFarm = returnFarmToMuni[0];
         totalMuni = returnFarmToMuni[1];
     } else {
-        let returnFarmToMuni = calculateMuniToFarm();
-        totalFarm = returnFarmToMuni[0];
-        totalMuni = returnFarmToMuni[1];
+        let returnMuniToFarm = calculateMuniToFarm();
+        totalFarm = returnMuniToFarm[0];
+        totalMuni = returnMuniToFarm[1];
     }
 
     $("#total_value_farm").text(totalFarm);
@@ -185,8 +185,8 @@ function calculateFarmToMuni() {
     item_price.five = parseInt(((valueFive * valuePorcent) / unit_prod.five), 10)
     $("#price_five").val(item_price.five);
 
-    let totalMuni = item_price.fal + item_price.g36 + item_price.hk + item_price.m4a4 + item_price.mtar + item_price.ak47 + item_price.navy  + item_price.machine + item_price.five;
-    let totalFarm = valueFal + valueG36 + valueHk + valueM4a4 + valueMtar + valueAk47 + valueNavy + valueMachine;
+    let totalFarm = item_price.fal + item_price.g36 + item_price.hk + item_price.m4a4 + item_price.mtar + item_price.ak47 + item_price.navy  + item_price.machine + item_price.five;
+    let totalMuni = valueFal + valueG36 + valueHk + valueM4a4 + valueMtar + valueAk47 + valueNavy + valueMachine + valueFive;
 
     return [totalMuni, totalFarm];
 }
@@ -231,7 +231,7 @@ function calculateMuniToFarm() {
     $("#qty_five").val(item_price.five);
 
     let totalMuni = item_price.fal + item_price.g36 + item_price.hk + item_price.m4a4 + item_price.mtar + item_price.ak47 + item_price.navy  + item_price.machine + item_price.five;
-    let totalFarm = valueFal + valueG36 + valueHk + valueM4a4 + valueMtar + valueAk47 + valueNavy + valueMachine;
+    let totalFarm = valueFal + valueG36 + valueHk + valueM4a4 + valueMtar + valueAk47 + valueNavy + valueMachine + valueFive;
 
     return [totalMuni, totalFarm];
 }
