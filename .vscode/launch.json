@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Iniciar o Chrome em relação a localhost",
-            "url": "file:///Users/pedro.marques/Downloads/real-estate-html-template/index.html",
+            "url": "file://C:/Users/pedin/Área de Trabalho/omega/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
