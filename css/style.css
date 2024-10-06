@@ -24,9 +24,17 @@
   font-size: 2rem;
   font-weight: bold;
 }
+
 .total-val
 {
   font-size:2rem;
+  font-weight: bold;
+  border: black;
+}
+
+.total-val-BRL
+{
+  font-size: 1.3rem;
   font-weight: bold;
   border: black;
 }
