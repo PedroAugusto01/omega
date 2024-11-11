@@ -428,6 +428,9 @@ width: 350px;
 
 
 /*** Footer ***/
+
+
+
 .footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
@@ -475,6 +478,7 @@ width: 350px;
 }
 
 .footer .copyright {
+    
     padding: 25px 0;
     font-size: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
@@ -491,10 +495,25 @@ width: 350px;
 }
 
 .footer .footer-menu a:last-child {
+
+    
     margin-right: 0;
     padding-right: 0;
     border-right: none;
 }
+
+footer {
+    background-color: #09ad7e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Garante que ele se mantenha abaixo do modal */
+    bottom: 0;
+    z-index: 0; /* Certifica-se que esteja abaixo do modal */
+    margin-top: auto; /* Mantém o rodapé na parte inferior */
+}
+
 
 .dbgOuter{
     border: solid 2px #888;
@@ -701,26 +720,38 @@ form {
 }
 
 /* The Close Button */
-.close {
+/* O botão fechar dentro de modais */
+.modal .close {
     position: absolute;
     top: 15px;
     right: 35px;
-    color: #f1f1f1;
+    color: #09ad7e;
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.close:hover,
-.close:focus {
-    color: #bbb;
+.modal .close:hover,
+.modal .close:focus {
+    color: #e41111;
     text-decoration: none;
     cursor: pointer;
 }
 
+
+
 /* 100% Image Width on Smaller Screens */
+
 @media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
